@@ -1,102 +1,148 @@
-<?<html lang="en">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Shinhasn</title>
+  <link rel="stylesheet" type="text/css" href="shared/css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
 </head>
-<body style="height: 100%;">
-    <nav class="navbar navbar-expand-md  navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="bootstrap.html">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                kitchenwares
-              </a>              
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">                  
-               
-                               
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Pooja Articles
-              </a>              
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">                  
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Utensils
-              </a>              
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">                  
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+
+<body>
+
+    <div class="header">
+        <div class="headerLeft"><a id="expend" href="#" onclick="widthextend()">&#9776;</a></div>
+        <div class="headerLogo"><img id="Logo" src="shared/pictures/spanglewhite.png" alt="HTML5 Icon"></div>
+    </div>
+
+
+    <div id="nav" class="nav">
+        <div class="menu" id="menu">
+
+          <ul class="nav__list">
+            <li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <input id="group-1" type="checkbox" checked hidden />
+    
+            <label for="group-1"><span class="fa fa-angle-right"></span>Products</label>
+            <ul class="group-list">
+              <li>
+                <input id="sub-group-1" type="checkbox" checked hidden />
+                <label for="sub-group-1"><span class="fa fa-angle-right"></span>Kitchenwares</label>
+                <ul class="sub-group-list">
+                  <li><a href="puranpatra.html">PuranPatra</a></li>
+                  <li><a href="sevsanchabig.html">Sev sancha Big</a></li>
+                  <li><a href="sevsanchasmall.html">Sev Sancha Small</a></li>
+                  <li><a href="puranjali.html">Puran jai</a></li>
+                  <li><a href="grater.html">Greter</a></li>
+                  <li><a href="masalapeti.html">Masala Peti</a></li>
+                </ul>
+                <input id="group-2" type="checkbox" hidden />
+                <label for="group-2"><span class="fa fa-angle-right"></span>Pooja Articals</label>
+                <ul class="sub-group-list">
+                  <li>
+                  <li><a href="pholary.html">Phoolary</a></li>
+                  <li><a href="poojapeti.html">Pooja Peti</a></li>
+                  <li><a href="mandir.html">Mandir</a></li>
+                  <li><a href="shinhasan.html">Sinhasn</a></li>
+                  <li><a href="jhoola.html">Jhoola</a></li>
+                  <li><a href="hawankund.html">Hawankund</a></li>
+              </li>
+    
+            </ul>
+            <input id="group-3" type="checkbox" hidden />
+            <label for="group-3"><span class="fa fa-angle-right"></span>Utensils</label>
+            <ul class="sub-group-list">
+              <li>
+              <li><a href="pandan.html">Pandan</a></li>
+              <li><a href="poojapeti.html">Storage Box</a></li>
+              <li><a href="dustpen.html">Dustpen</a></li>
+              </li>
+    
+            </ul>
             </li>
           </ul>
-          
+          <li><a href="aboutus.html">About Us</a></li>
+          </li>
         </div>
-      </nav>
 
-      <div class="container-fluid bg-light" style="padding-top: 60px;">
-        <div class="row">
-          <div class="col-md-4">
-          <div class="card bg-info text-white">
-            <img src="./shared/pictures/crusher.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+
+    <div id="content">
+     
+        <div class="Slides">
+
+            <div class="mySlides">
+                <img src="shared/pictures/crusher.png" style="width: auto; height: 300px ;">
+                <h1>KITCHENWARES</h1>
             </div>
-          </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card bg-info text-white">
-              <img src="./shared//pictures/Pandan.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-              </div>
+            <div class="mySlides">
+                <img src="shared/pictures/Pandan.png" style=" width: auto; height: 300px ;">
+                <h1>UTENSILS</h1>
             </div>
+
+            <div class="mySlides">
+                <img src="shared/pictures/shinhasaqnpng.png" style="width: auto; height: 300px ; ">
+                <h1>POOJA ARTICALS</h1>
             </div>
-            <div class="col-md-4">
-              <div class="card bg-info text-white">
-                <img src="./shared/pictures/hawankund.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-              </div>
         </div>
-      </div>
-      
+        <div class="flexcontent">
+
+            <div class="cont">
+                <a href="kitchenware.html">
+                    <div class="card">
+                        <img src="shared/pictures/crusher.png" alt="Avatar" style="width: 100%; min-height: 100% auto;">
+                        <div class="cardcontainer">
+                            <h1 class="he">KITCHENWARE</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cont">
+                <a href="utensils.html">
+                    <div class="card">
+                        <img src="shared/pictures/Pandan.png" alt="Avatar"
+                            style=" width: 100%; min-height: 100px auto;">
+                        <div class="cardcontainer">
+                            <h1 class="he">UTENSILS</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
 
+            <div class="cont">
+                <a href="poojaartical.html">
+                    <div class="card">
+                        <img src="shared/pictures/shinhasaqnpng.png" alt="Avatar"
+                            style="width: 100%; min-height: 100px auto;">
+                        <div class="cardcontainer">
+                            <h1 class="he">POOJA ARTICALS</h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="footer">
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <div style=" text-align: center; padding: 5px;">
+                <p style=" color: rgba(211, 207, 207, 0.801); font-family: Georgia, 'Times New Roman', Times, serif;">
+                    Copyright
+                    2020 All Right Reserved ||
+                    Spangle And Si Logo are registered Trademark of Shilpa Industries</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/shared/js/menu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
